@@ -97,14 +97,14 @@ public class Practise {
                     System.out.println("It is November");
                     break;
                 case 12:
-                    System.out.println("It is December");
+                    System.out.println("It is: December");
                     break;
 
 
             }
 
         }
-        
+
 
     }
 }
