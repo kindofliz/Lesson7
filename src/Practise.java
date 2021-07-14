@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Practise {
@@ -47,64 +48,107 @@ public class Practise {
 //        }
 
         //Task 1
+        //Option 1
 
-        short day;
+//        short day;
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Please enter the day number: ");
+//        day = scanner.nextShort();
+//
+//        System.out.println("The day number is: ");
+//
+//
+//        if (day<0) {
+//            System.out.println("The day cannot be negative");
+//        } else if (day>365) {
+//            System.out.println("The day cannot be that large");
+//        } else {
+//            short month = (short)(Math.ceil(day/30) + 1);
+//            switch (month) {
+//                case 1:
+//                    System.out.println("It is: January");
+//                    break;
+//                case 2:
+//                    System.out.println("It is: February");
+//                    break;
+//                case 3:
+//                    System.out.println("It is: March");
+//                    break;
+//                case 4:
+//                    System.out.println("It is: April");
+//                    break;
+//                case 5:
+//                    System.out.println("It is: May");
+//                    break;
+//                case 6:
+//                    System.out.println("It is: June");
+//                    break;
+//                case 7:
+//                    System.out.println("It is: July");
+//                    break;
+//                case 8:
+//                    System.out.println("It is: August");
+//                    break;
+//                case 9:
+//                    System.out.println("It is: September");
+//                    break;
+//                case 10:
+//                    System.out.println("It is: October");
+//                    break;
+//                case 11:
+//                    System.out.println("It is: November");
+//                    break;
+//                case 12:
+//                    System.out.println("It is: December");
+//                    break;
+//
+//
+//            }
+//
+//        }
+
+
+        // Option 2
+
+        int dayNumber;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter the day: ");
-        day = scanner.nextShort();
+        System.out.println("Please enter the day number: ");
+        dayNumber = scanner.nextInt();
+        System.out.println("The day number is: " + dayNumber);
 
-        System.out.println("The day number is: ");
 
-
-        if (day<0) {
-            System.out.println("The day cannot be negative");
-        } else if (day>365) {
-            System.out.println("The day cannot be that large");
+        if (dayNumber<0) {
+            System.out.println("The day number cannot be negative.");
+        } else if (dayNumber>7) {
+            System.out.println("Your number is too large, there are only 7 days in a week.");
         } else {
-            short month = (short)(Math.ceil(day/30) + 1);
-            switch (month) {
+
+            switch (dayNumber) {
                 case 1:
-                    System.out.println("It is January");
+                    System.out.println("It is a working day!");
                     break;
                 case 2:
-                    System.out.println("It is February");
+                    System.out.println("It is a working day!");
                     break;
                 case 3:
-                    System.out.println("It is March");
+                    System.out.println("It is a working day!");
                     break;
                 case 4:
-                    System.out.println("It is April");
+                    System.out.println("It is a working day!");
                     break;
                 case 5:
-                    System.out.println("It is May");
+                    System.out.println("It is a working day!");
                     break;
                 case 6:
-                    System.out.println("It is June");
+                    System.out.println("It is a holiday!");
                     break;
                 case 7:
-                    System.out.println("It is July");
+                    System.out.println("It is a holiday!");
                     break;
-                case 8:
-                    System.out.println("It is August");
+                default:
+                    System.out.println("Day value is input incorrectly");
                     break;
-                case 9:
-                    System.out.println("It is September");
-                    break;
-                case 10:
-                    System.out.println("It is October");
-                    break;
-                case 11:
-                    System.out.println("It is November");
-                    break;
-                case 12:
-                    System.out.println("It is: December");
-                    break;
-
-
             }
-
         }
-
-
     }
 }
